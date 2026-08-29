@@ -7,11 +7,12 @@
   ],
   "seats": {
     "A": {
-      "state": "claimed",
+      "state": "filled",
       "model": "claude-opus-5",
       "family": "anthropic",
       "actor": "claude-opus-5@session-verify",
-      "at": "2026-08-29T17:06:25Z"
+      "at": "2026-08-29T17:06:28Z",
+      "verdict": "PUBLISH"
     },
     "B": {
       "state": "open"
