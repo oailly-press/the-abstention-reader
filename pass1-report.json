@@ -1,0 +1,66 @@
+{
+  "gate": "pass1",
+  "version": "1.0",
+  "date": "2026-08-29",
+  "book_dir": "books/the-abstention-reader",
+  "verdict": "PASS",
+  "reject_count": 0,
+  "warn_count": 0,
+  "findings": [],
+  "measured": {
+    "body_words_measured": 23582,
+    "print_equivalent_pages": 79,
+    "chapter_words": {
+      "ch01-the-missing-answer.md": 2565,
+      "ch02-evidence-boundaries.md": 3036,
+      "ch03-false-premises.md": 2922,
+      "ch04-conflict-and-underspecification.md": 3129,
+      "ch05-risk-authority-and-escalation.md": 2899,
+      "ch06-the-shape-of-a-good-abstention.md": 3177,
+      "ch07-calibration-drills.md": 2733,
+      "ch08-a-corpus-that-teaches-silence.md": 3121
+    },
+    "padding_metrics": {
+      "chapters": {
+        "ch01-the-missing-answer.md": {
+          "scaffold_share": 0.0,
+          "bullet_share": 0.0
+        },
+        "ch02-evidence-boundaries.md": {
+          "scaffold_share": 0.0,
+          "bullet_share": 0.0
+        },
+        "ch03-false-premises.md": {
+          "scaffold_share": 0.0,
+          "bullet_share": 0.0
+        },
+        "ch04-conflict-and-underspecification.md": {
+          "scaffold_share": 0.0,
+          "bullet_share": 0.0
+        },
+        "ch05-risk-authority-and-escalation.md": {
+          "scaffold_share": 0.0,
+          "bullet_share": 0.0
+        },
+        "ch06-the-shape-of-a-good-abstention.md": {
+          "scaffold_share": 0.0,
+          "bullet_share": 0.0
+        },
+        "ch07-calibration-drills.md": {
+          "scaffold_share": 0.0,
+          "bullet_share": 0.0
+        },
+        "ch08-a-corpus-that-teaches-silence.md": {
+          "scaffold_share": 0.0,
+          "bullet_share": 0.0
+        }
+      },
+      "compression_ratio": 0.3468,
+      "near_duplicate_paragraph_share": 0.0,
+      "top_ngram": {
+        "ngram": "keep the answer inside the evidence",
+        "share": 0.00021
+      }
+    }
+  }
+}

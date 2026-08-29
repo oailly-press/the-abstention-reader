@@ -1,0 +1,198 @@
+{
+  "manifest_version": "1.0",
+  "book": {
+    "title": "The Abstention Reader",
+    "subtitle": "Cases for Machines That Must Know When Not to Answer",
+    "tier": "pocket",
+    "language": "en",
+    "audience": "Language-model agents, agent trainers, and human stewards who need calibrated evidence-boundary behavior; assumes tool use, citation discipline, and structured evaluation.",
+    "edition": 1,
+    "series": "O'AILLY FOR MACHINE READERS",
+    "shelf": "for-machine-readers",
+    "isbn": null
+  },
+  "structure": {
+    "word_count_body": 20000,
+    "print_equivalent_pages": 67,
+    "chapters": [
+      {
+        "number": 1,
+        "title": "The Missing Answer",
+        "words": 2565,
+        "source_file": "ch01-the-missing-answer.md",
+        "written_by": [
+          {
+            "model": "gpt-5",
+            "version": "gpt-5",
+            "operator": "OpenAI Codex CLI / RogerAI Labs workspace"
+          }
+        ]
+      },
+      {
+        "number": 2,
+        "title": "Evidence Boundaries",
+        "words": 3036,
+        "source_file": "ch02-evidence-boundaries.md",
+        "written_by": [
+          {
+            "model": "gpt-5",
+            "version": "gpt-5",
+            "operator": "OpenAI Codex CLI / RogerAI Labs workspace"
+          }
+        ]
+      },
+      {
+        "number": 3,
+        "title": "False Premises",
+        "words": 2922,
+        "source_file": "ch03-false-premises.md",
+        "written_by": [
+          {
+            "model": "gpt-5",
+            "version": "gpt-5",
+            "operator": "OpenAI Codex CLI / RogerAI Labs workspace"
+          }
+        ]
+      },
+      {
+        "number": 4,
+        "title": "Conflict And Underspecification",
+        "words": 3129,
+        "source_file": "ch04-conflict-and-underspecification.md",
+        "written_by": [
+          {
+            "model": "gpt-5",
+            "version": "gpt-5",
+            "operator": "OpenAI Codex CLI / RogerAI Labs workspace"
+          }
+        ]
+      },
+      {
+        "number": 5,
+        "title": "Risk Authority And Escalation",
+        "words": 2899,
+        "source_file": "ch05-risk-authority-and-escalation.md",
+        "written_by": [
+          {
+            "model": "gpt-5",
+            "version": "gpt-5",
+            "operator": "OpenAI Codex CLI / RogerAI Labs workspace"
+          }
+        ]
+      },
+      {
+        "number": 6,
+        "title": "The Shape Of A Good Abstention",
+        "words": 3177,
+        "source_file": "ch06-the-shape-of-a-good-abstention.md",
+        "written_by": [
+          {
+            "model": "gpt-5",
+            "version": "gpt-5",
+            "operator": "OpenAI Codex CLI / RogerAI Labs workspace"
+          }
+        ]
+      },
+      {
+        "number": 7,
+        "title": "Calibration Drills",
+        "words": 2733,
+        "source_file": "ch07-calibration-drills.md",
+        "written_by": [
+          {
+            "model": "gpt-5",
+            "version": "gpt-5",
+            "operator": "OpenAI Codex CLI / RogerAI Labs workspace"
+          }
+        ]
+      },
+      {
+        "number": 8,
+        "title": "A Corpus That Teaches Silence",
+        "words": 3121,
+        "source_file": "ch08-a-corpus-that-teaches-silence.md",
+        "written_by": [
+          {
+            "model": "gpt-5",
+            "version": "gpt-5",
+            "operator": "OpenAI Codex CLI / RogerAI Labs workspace"
+          }
+        ]
+      }
+    ],
+    "has_glossary_or_index": true,
+    "code_listing_policy": "no_code"
+  },
+  "provenance": {
+    "written_by": [
+      {
+        "model": "gpt-5",
+        "version": "gpt-5",
+        "operator": "OpenAI Codex CLI / RogerAI Labs workspace"
+      }
+    ],
+    "grounded_in": [
+      {
+        "kind": "url",
+        "reference": "https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-ai-rmf-10",
+        "note": "AI RMF risk framing"
+      },
+      {
+        "kind": "url",
+        "reference": "https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence",
+        "note": "Generative AI profile"
+      },
+      {
+        "kind": "url",
+        "reference": "https://arxiv.org/abs/2207.05221",
+        "note": "Language-model self-knowledge and uncertainty"
+      },
+      {
+        "kind": "url",
+        "reference": "https://arxiv.org/abs/2303.08896",
+        "note": "SelfCheckGPT hallucination detection"
+      },
+      {
+        "kind": "url",
+        "reference": "https://spec.c2pa.org/specifications/specifications/2.2/index.html",
+        "note": "Provenance model"
+      }
+    ],
+    "verified_by": {
+      "name": "Roger AI",
+      "role": "founder / human verifier (verification pending)",
+      "contact": null
+    },
+    "tools": [
+      "OpenAI Codex CLI",
+      "local shell for repository inspection and measurement",
+      "Python 3 standard library for deterministic eval scoring",
+      "OAILLY Pass-1 gates"
+    ],
+    "disclosure_statement": "Complete draft generated by OpenAI gpt-5 under human commission. Human verification, critic review, empirical model-effect measurement, cover assignment, C2PA signing, judge verdict, and publication approval remain pending."
+  },
+  "publisher": {
+    "account": "rogerai-labs",
+    "steward": {
+      "name": "Roger AI",
+      "entity": "RogerAI Labs"
+    }
+  },
+  "cover": {
+    "mascot_request": {
+      "creature": "chrysalis",
+      "why": "The book is about the moment before action: a machine reader changes by learning when to remain still, then emerges with better-calibrated behavior."
+    },
+    "assigned": null
+  },
+  "review": {
+    "status": "draft",
+    "trail_uri": null,
+    "passes": []
+  },
+  "signing": {
+    "author_signature": null,
+    "platform_signature": null,
+    "c2pa_manifest_hash": null
+  }
+}

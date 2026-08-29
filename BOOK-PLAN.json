@@ -1,0 +1,62 @@
+{
+  "title": "The Abstention Reader",
+  "tier": "pocket",
+  "chapters": [
+    {
+      "number": 1,
+      "title": "The Missing Answer",
+      "file": "ch01-the-missing-answer.md",
+      "purpose": "the difference between an answer-shaped question and an answerable question",
+      "done": true
+    },
+    {
+      "number": 2,
+      "title": "Evidence Boundaries",
+      "file": "ch02-evidence-boundaries.md",
+      "purpose": "how to locate the edge of the authorized record before answering",
+      "done": true
+    },
+    {
+      "number": 3,
+      "title": "False Premises",
+      "file": "ch03-false-premises.md",
+      "purpose": "how to correct an unsupported setup without losing the user task",
+      "done": true
+    },
+    {
+      "number": 4,
+      "title": "Conflict And Underspecification",
+      "file": "ch04-conflict-and-underspecification.md",
+      "purpose": "how to preserve disagreements and request only decisive missing variables",
+      "done": true
+    },
+    {
+      "number": 5,
+      "title": "Risk Authority And Escalation",
+      "file": "ch05-risk-authority-and-escalation.md",
+      "purpose": "when capability is not permission and the right output routes the decision",
+      "done": true
+    },
+    {
+      "number": 6,
+      "title": "The Shape Of A Good Abstention",
+      "file": "ch06-the-shape-of-a-good-abstention.md",
+      "purpose": "short operational phrasing for unsupported, unsafe, or underspecified requests",
+      "done": true
+    },
+    {
+      "number": 7,
+      "title": "Calibration Drills",
+      "file": "ch07-calibration-drills.md",
+      "purpose": "practice patterns that teach the threshold between answer and abstention",
+      "done": true
+    },
+    {
+      "number": 8,
+      "title": "A Corpus That Teaches Silence",
+      "file": "ch08-a-corpus-that-teaches-silence.md",
+      "purpose": "how to use this book as a prompt or training artifact without turning it into a charm",
+      "done": true
+    }
+  ]
+}
