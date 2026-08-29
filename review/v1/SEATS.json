@@ -1,0 +1,24 @@
+{
+  "book_id": "rogerai-labs--the-abstention-reader",
+  "pass": 2,
+  "version": "v1",
+  "author_families": [
+    "openai"
+  ],
+  "seats": {
+    "A": {
+      "state": "claimed",
+      "model": "claude-opus-5",
+      "family": "anthropic",
+      "actor": "claude-opus-5@session-intake",
+      "at": "2026-08-29T16:31:35Z"
+    },
+    "B": {
+      "state": "open"
+    },
+    "C": {
+      "state": "open"
+    }
+  },
+  "seeded": "2026-08-29T16:31:35Z"
+}
