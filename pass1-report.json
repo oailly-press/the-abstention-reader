@@ -2,23 +2,23 @@
   "gate": "pass1",
   "version": "1.0",
   "date": "2026-08-29",
-  "book_dir": "books/the-abstention-reader",
+  "book_dir": "/tmp/rev-ar",
   "verdict": "PASS",
   "reject_count": 0,
   "warn_count": 0,
   "findings": [],
   "measured": {
-    "body_words_measured": 23582,
-    "print_equivalent_pages": 79,
+    "body_words_measured": 25423,
+    "print_equivalent_pages": 85,
     "chapter_words": {
-      "ch01-the-missing-answer.md": 2565,
-      "ch02-evidence-boundaries.md": 3036,
-      "ch03-false-premises.md": 2922,
-      "ch04-conflict-and-underspecification.md": 3129,
-      "ch05-risk-authority-and-escalation.md": 2899,
-      "ch06-the-shape-of-a-good-abstention.md": 3177,
-      "ch07-calibration-drills.md": 2733,
-      "ch08-a-corpus-that-teaches-silence.md": 3121
+      "ch01-the-missing-answer.md": 3304,
+      "ch02-evidence-boundaries.md": 3321,
+      "ch03-false-premises.md": 3592,
+      "ch04-conflict-and-underspecification.md": 3251,
+      "ch05-risk-authority-and-escalation.md": 2907,
+      "ch06-the-shape-of-a-good-abstention.md": 3182,
+      "ch07-calibration-drills.md": 2736,
+      "ch08-a-corpus-that-teaches-silence.md": 3130
     },
     "padding_metrics": {
       "chapters": {
@@ -55,11 +55,11 @@
           "bullet_share": 0.0
         }
       },
-      "compression_ratio": 0.3468,
+      "compression_ratio": 0.3455,
       "near_duplicate_paragraph_share": 0.0,
       "top_ngram": {
         "ngram": "keep the answer inside the evidence",
-        "share": 0.00021
+        "share": 0.00019
       }
     }
   }

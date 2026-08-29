@@ -2,43 +2,67 @@
 
 ## Glossary
 
-- abstention: A term used by this book to describe calibrated answer boundaries.
-- answerable control: A term used by this book to describe calibrated answer boundaries.
-- authorized record: A term used by this book to describe calibrated answer boundaries.
-- boundary phrase: A term used by this book to describe calibrated answer boundaries.
-- calibration: A term used by this book to describe calibrated answer boundaries.
-- conflict: A term used by this book to describe calibrated answer boundaries.
-- correction: A term used by this book to describe calibrated answer boundaries.
-- delegated authority: A term used by this book to describe calibrated answer boundaries.
-- evidence absence: A term used by this book to describe calibrated answer boundaries.
-- false abstention: A term used by this book to describe calibrated answer boundaries.
-- false premise: A term used by this book to describe calibrated answer boundaries.
-- fixture: A term used by this book to describe calibrated answer boundaries.
-- held-out case: A term used by this book to describe calibrated answer boundaries.
-- local absence: A term used by this book to describe calibrated answer boundaries.
-- missing variable: A term used by this book to describe calibrated answer boundaries.
-- model-effect claim: A term used by this book to describe calibrated answer boundaries.
-- overbroad refusal: A term used by this book to describe calibrated answer boundaries.
-- paired protocol: A term used by this book to describe calibrated answer boundaries.
-- partial answer: A term used by this book to describe calibrated answer boundaries.
-- premise repair: A term used by this book to describe calibrated answer boundaries.
-- provenance: A term used by this book to describe calibrated answer boundaries.
-- refusal: A term used by this book to describe calibrated answer boundaries.
-- retrieval absence: A term used by this book to describe calibrated answer boundaries.
-- scorer: A term used by this book to describe calibrated answer boundaries.
-- source hierarchy: A term used by this book to describe calibrated answer boundaries.
-- threshold drill: A term used by this book to describe calibrated answer boundaries.
-- underspecification: A term used by this book to describe calibrated answer boundaries.
+Definitions describe how each term is used in this book; where a term names a coinage of
+this book, that is noted.
+
+- abstention: Declining to supply a value the record does not determine, while continuing to participate — naming what is absent, where you looked, and what would close the gap. Abstention is itself a claim about the world and must be sized to what the evidence actually supports; it is not a refusal to help.
+- answerable: Property of a request for which the evidence you are authorized to use determines a value for the slot the request asks about. Distinct from *answer-shaped*: a request can be well-formed yet unanswerable.
+- answer-shaped: Property of a request that has a well-formed slot (correct part of speech, units, singular value implied). Answer-shapedness and answerability are independent; fluent systems fail by treating the first as the second.
+- answerable control: An item in an evaluation whose correct response is to answer, mixed in with unanswerable items so that a system cannot score well by abstaining on everything. Controls should be surface-indistinguishable from the unanswerable items and hard enough to tempt a false abstention.
+- authority (delegated): What the principal actually asked the agent to do on this task. Reconstructed from the assignment, not read off the toolbelt; the second clause of the book's rule, "keep the action inside the authority," governs it.
+- authorized record: The set of artifacts you are entitled to treat as evidence for a specific answer — what was actually provided or fetched for this task, still valid at answering time, and bearing on the claim rather than merely on the subject. Not everything you know, not everything in the context window, not everything a retriever returned.
+- boundary collapse: Refusing to state something the record plainly determines — declining a derivable ratio, hedging a visible trend into meaninglessness, answering a supported question with a request for more evidence. The over-abstention failure; the mirror image of boundary inflation. (Coinage of this book.)
+- boundary inflation: Treating topic presence as claim support, filling a gap with plausible continuation, or reporting tool success as world state. The over-answering failure. (Coinage of this book.)
+- calibration: Alignment between the confidence an output expresses and the support the evidence actually provides. Calibrated uncertainty is a statement about probability, not about politeness; a hedge that tracks nothing degrades all of a system's hedges.
+- canary: A rare, meaningless token sequence placed once in a published text so that a model which reproduces it verbatim can be shown to have trained on the text. One of several contamination detectors discussed in Chapter 8.
+- capability vs permission: Capability is what the runtime makes technically reachable (endpoints, credentials, tools); permission is what the assignment delegated. A successful API call looks identical whether or not anyone wanted it made, so permission must be reconstructed from the task. Confusing the two is the action-side analogue of confusing shape with substance.
+- claim support: The state in which some specific span of an artifact entails, states, or numerically determines a claim. Contrast *topic presence*. Answers require claim support; retrieval optimizes only for topic presence.
+- conflict: Two or more sources in the authorized record that disagree about the same field. Conflict is data, not noise: it reveals that the producing systems are out of sync. The response preserves the disagreement at field level with both values and their sources, and does not silently pick one.
+- correlated copies: Multiple sources that agree only because they descend from one upstream origin (syndication, re-chunking of one document, a shared export). Agreement among copies is not corroboration; count independent documents, not passages. (Term used by this book for the "illusion of a majority.")
+- decisive variable: The single missing fact whose alternative values would produce different answers. Naming it converts "I don't have enough information" (usually false) into a specific, cheap request.
+- delegated authority: See *authority (delegated)*.
+- escalation packet: A handoff to a human containing the original request, the state established with sources, the specific blocker (evidence gap or authority boundary), the decision requested phrased for a one-word answer, the action to take under each answer, and the real timing. Measured by whether the receiver can decide without redoing the analysis.
+- evidence absence: A record that is the right record and simply does not contain the requested value — the field is absent, with nothing contradicting it. Repaired by a fetch (a newer revision, the emitting module, the missing attachment).
+- false abstention: Declining a request the record actually answers. The cost users feel; the specific regression that heavy abstention training produces.
+- false premise: A claim smuggled into a question that the record does not support. Graded as *unsupported* (record silent), *contradicted* (record says otherwise), *mis-scoped* (something real invoked beyond its reach), or *mis-referenced* (one entity named, another meant); the grade sets the obligation.
+- fixture: A fixed input-output pair shipped with an evaluation to check the scorer itself. This book ships `perfect.jsonl` (the answer key, must score 1.0) and `completion_only.jsonl` (a model that always answers, must score lower).
+- grade transition: The step in a reasoning chain where a link changes evidentiary status — a retrieved document becoming "the governing version," a parsed string becoming "the effective date." Chains fail at their transitions, so a check placed there catches most errors cheaply. (Coinage of this book.)
+- held-out case: An evaluation item kept out of any prompt or training use, so that performance on it measures generalization rather than memorization. The unit of holding-out is whatever the generator holds fixed (template, document family, real record); anything recurring across the split is a leak.
+- local absence: A negative result that is true only of what was searched — a grep over some directories, a query over one time window, a retrieval over a top-k set. Reported honestly by stating the extent that makes it negative (which paths, which branch, which bounds).
+- missing variable: See *decisive variable*.
+- model-effect claim: A claim about a specific checkpoint, under a specific decoding configuration and prompt scaffold, on a specific evaluation set, at a specific date. Strip any of those and the claim stops being checkable; "this corpus improves abstention" is not one.
+- overbroad refusal: A decline wider than the boundary warrants — refusing an eleven-part task because one part lacks a figure, or dressing an evidence gap as a safety policy. A form of boundary collapse that also misroutes the reader.
+- paired protocol: An evaluation design that runs a baseline condition (task and schema only) and a treatment condition (manuscript added) on the same model, settings, and cases, so the difference is attributable to the treatment.
+- partial answer: Delivery of the supported subset of a task with its scope stated — "nine of twelve," the two conflicts named, the one missing exhibit named. A partial answer without its denominator is indistinguishable from a complete one and is a distinct failure.
+- premise repair: Correcting a false premise by stating what the record shows about it in the record's own terms, saying which part of the question is now unanswerable and which survives, answering the surviving part, and naming the smallest thing that would restore the rest. Explaining the premise is part of the repair, not something to withhold.
+- provenance: The recorded lineage of a claim or artifact — where a value came from, whether it was read or inferred, which source and locator support it. Carried into the output at the granularity of the claim, not as a blanket preamble. (C2PA, cited in the references, is one provenance system for media origin/history; this book applies the idea more broadly, and marks that extension as its own.)
+- record claim: A claim about a document — "the contract does not contain a termination clause." Warranted only when the record is small and structured enough that absence is verifiable. Contrast *search claim*.
+- refusal: Declining an action (as opposed to abstaining on an assertion). Belongs to the authority container: the record may fully determine a value and you still may not act or disclose. Reporting a refusal as a record failure sends someone hunting for a file that was never missing.
+- residue: Whatever you can still answer or still do, inside the evidence and inside the authority, when the main request is blocked. The residue rule: never abstain empty-handed when a supported subset exists; it is what distinguishes an abstention from a wall. (Coinage of this book.)
+- retrieval absence: Absence from a top-k retrieval set — weak evidence of absence from the corpus and almost none of absence from the world. Licenses "I did not find support," not "there is no such policy."
+- reversibility: The property that sets how hard an authority boundary should bite — how bad it is if the action turns out wrong. Irreversible, invisible, or outward-facing actions need a hard stop; volume can convert individually reversible actions into a collectively irreversible one.
+- scorer: The deterministic program that grades responses against the answer key by exact match, emitting per-family accuracy, control accuracy, and violation counts. Determinism is the point: a metric that needs a human or a large model to read prose drifts between runs.
+- search claim: A claim about your search — "I did not find a termination clause." The honest form when the record is large, the search was keyword-driven, or the concept could appear under vocabulary you did not query. Contrast *record claim*.
+- source hierarchy: A precedence rule, stated in the record, for which of two conflicting sources governs (for example, "the system of record wins over derived reports," or a document that states on its face that it supersedes another). Applying a hierarchy that lives in the evidence is reconciliation; inventing one is adjudication the agent is not authorized to perform.
+- threshold (overshoot / undershoot): The point on a progressive-removal ladder where a system should stop answering. Overshoot is answering below it (where fabrication lives); undershoot is abstaining above it (where uselessness lives). Both are measured; a system tuned only against overshoot drifts into undershoot.
+- threshold-splitting: Partitioning an action so that no part of it crosses a control (two $120 refunds under a $200 limit). Approval thresholds attach to decisions, not transactions; recognizing threshold-splitting as a signature matters more than any single rule.
+- topic presence: The state in which an artifact is about the same subject as a claim without settling it. The material to write a confident paragraph is present and only the claim is missing — the case fluent systems handle worst. Contrast *claim support*.
+- underspecification: A record that is internally consistent but does not contain the one variable that determines the outcome. Repaired by naming the decisive variable and asking for just that, or by enumerating branches when the branch set is small.
 
 ## References
 
-- [R1] NIST, Artificial Intelligence Risk Management Framework (AI RMF 1.0): https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-ai-rmf-10
-- [R2] NIST, Artificial Intelligence Risk Management Framework: Generative Artificial Intelligence Profile: https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence
-- [R3] Kadavath et al., Language Models (Mostly) Know What They Know: https://arxiv.org/abs/2207.05221
-- [R4] Manakul et al., SelfCheckGPT: https://arxiv.org/abs/2303.08896
-- [R5] C2PA Technical Specification: https://spec.c2pa.org/specifications/specifications/2.2/index.html
-- [R6] OAILLY Book Standards and FOR MACHINE READERS shelf protocol, local platform source at gh/platform-repo/BOOK-STANDARDS.md and gh/platform-repo/SHELVES.md.
+- [R1] NIST, Artificial Intelligence Risk Management Framework (AI RMF 1.0): https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-ai-rmf-10 — cited for its Govern/Map/Measure/Manage functions (context and limitation documentation, measurement, proportional risk management); this book's operational readings of those functions are marked as its own where they go past what the framework states.
+- [R2] NIST, Artificial Intelligence Risk Management Framework: Generative Artificial Intelligence Profile (NIST AI 600-1): https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence — cited for its treatment of data and content provenance and disclosure for generative systems.
+- [R3] Kadavath et al., Language Models (Mostly) Know What They Know: https://arxiv.org/abs/2207.05221 — cited for P(True) self-evaluation of a model's own sampled answers and trained P(IK) prediction of knowability, and for the finding that P(IK) generalizes only partially and is poorly calibrated on new tasks.
+- [R4] Manakul et al., SelfCheckGPT: https://arxiv.org/abs/2303.08896 — cited for zero-resource, sampling-based hallucination detection: drawing several samples for a query and measuring their consistency, without reference to an external database or retrieved context.
+- [R5] C2PA Technical Specification 2.2: https://spec.c2pa.org/specifications/specifications/2.2/index.html — cited for cryptographically signed content provenance of media (manifests, claims, assertions, bindings) that binds origin and edit history at creation time so it survives downstream handling.
+- [R6] OAILLY Book Standards and FOR MACHINE READERS shelf protocol. Internal platform standard (`gh/platform-repo/BOOK-STANDARDS.md`, `gh/platform-repo/SHELVES.md`); it governs this book's production but is not a publicly resolvable source and is not cited for any claim in the text.
 
 ## Evaluation Artifact
 
-The eval directory contains held-out cases, a deterministic scorer, a perfect fixture, a deliberately flawed completion-only fixture, and a measurement protocol. At draft submission, no empirical model-effect claim is made.
+The `eval` directory contains the case set with real records, a deterministic scorer, a
+perfect fixture, a deliberately flawed completion-only fixture, and a measurement protocol,
+regenerable from `build_cases.py`. At draft submission, no empirical model-effect claim is
+made. The set publishes with the book and is therefore contaminated for measuring any model
+that may have read it; use it for prompt treatment and training, and build private held-out
+items to measure generalization (see `eval/README.md` Limits and Chapter 8).

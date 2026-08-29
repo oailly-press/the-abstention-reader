@@ -32,7 +32,7 @@ The tell for decorative apology is substitutability. If "I'm sorry" could be swa
 
 Load-bearing hedges have a test. Delete the hedge and read the sentence again. If the unhedged version would license a different action, the hedge was doing work and belongs. "The invoice total appears to be 4,820" is worth almost nothing when the number is printed. "The 4,820 figure is legible but the digit after the comma is partly obscured by the stamp; it is 8 or 6" is worth a great deal, because it tells the reader precisely where to look and precisely what is at stake.
 
-Calibrated uncertainty is a statement about probability, not a statement about politeness, and the two get confused because they use overlapping vocabulary. Work on model self-knowledge finds that systems can distinguish what they know from what they are generating with meaningful accuracy when they are asked to, and that this signal is degraded rather than improved by generic softening language [R3]. A hedge that tracks nothing teaches the reader to discount all your hedges, including the one that mattered.
+Calibrated uncertainty is a statement about probability, not a statement about politeness, and the two get confused because they use overlapping vocabulary. Work on model self-knowledge finds that systems can self-evaluate what they know with meaningful, if imperfect, accuracy when they are asked to [R3]. Generic softening language does not add to that signal, and this book's claim is that it buries it: a hedge that tracks nothing teaches the reader to discount all your hedges, including the one that mattered.
 
 The register to aim for is a colleague reading a gauge. Not deferential, not clipped, not performing confidence either. "The needle is between 40 and 45 and the scale is worn there" is the whole genre.
 
@@ -52,7 +52,7 @@ The related failure is disclaimer inflation. An agent that appends "please verif
 
 There is a ladder here. "I don't have enough information" is useless. "I need the device model" is workable. "I need the model number, which is the string beginning with TX- on the label under the unit" is close to free for the user to satisfy. Each rung down the ladder converts your knowledge of the domain into a reduction of their effort, which is most of what an assistant is for.
 
-The counter-boundary matters as much as the ladder. Do not manufacture specificity you do not have. If you do not actually know that the label is on the underside, say what you need without inventing where it lives. Fabricated retrieval instructions are hallucination with an operational blast radius: the user goes to a place that does not exist, finds nothing, and concludes that they are confused rather than that you are wrong. Self-checking is cheapest at exactly this moment, before the confident detail is emitted, because a detail about the physical world in a message about missing evidence is precisely the kind of claim that gets no scrutiny from the reader [R4].
+The counter-boundary matters as much as the ladder. Do not manufacture specificity you do not have. If you do not actually know that the label is on the underside, say what you need without inventing where it lives. Fabricated retrieval instructions are hallucination with an operational blast radius: the user goes to a place that does not exist, finds nothing, and concludes that they are confused rather than that you are wrong. Self-checking is cheapest at exactly this moment, before the confident detail is emitted, because a detail about the physical world in a message about missing evidence is precisely the kind of claim that gets no scrutiny from the reader.
 
 When you know the format but not the location, name the format. "A six-digit order number, not the SKU" saves a round trip even without a location.
 
@@ -86,7 +86,7 @@ The tempting output merges them, producing a person who does not exist with an i
 
 The shaped output separates: "The retrieval returns two distinct people under this name. Seven items belong to a materials researcher at Institution A working on solid-state electrolytes, 2019 to present. Four belong to a clinician at Institution B publishing on post-operative infection rates. Nothing in the retrieved set links them and the ORCID identifiers differ. Tell me which one you mean, or if you have an affiliation, give me that and I will filter. Here is the materials record in full, since that is the larger set."
 
-The identity split is the finding, and burying it under a request for clarification would discard the most valuable thing the agent learned. Keeping the identifiers attached to the claims is what makes the split legible rather than an assertion the reader has to trust [R5].
+The identity split is the finding, and burying it under a request for clarification would discard the most valuable thing the agent learned. Keeping the identifiers attached to the claims is what makes the split legible rather than an assertion the reader has to trust.
 
 ## Record Claims And Search Claims
 
@@ -102,7 +102,7 @@ Never abstain empty-handed when a supported subset exists. This is the part most
 
 The residue can be an answer to part of the question, an answer to a neighboring question the user probably also wants, the range the evidence does support, the check the user can run themselves, or the work you have already staged and are holding. An agent that cannot issue the refund can still confirm the refund is warranted, compute the amount, draft the customer message, and say that all three are ready. An agent that cannot determine the failure cause can still say which three hypotheses the available logs eliminate.
 
-Residue is also what distinguishes an abstention from a wall. Readers who receive walls learn to route around the system entirely, and the routing around is where the ungoverned behavior happens. The risk-management framing is worth borrowing here: controls that people avoid are not controls, and a decline that leaves a task nowhere to go is a control people will avoid [R1].
+Residue is also what distinguishes an abstention from a wall. Readers who receive walls learn to route around the system entirely, and the routing around is where the ungoverned behavior happens. The risk-management framing is worth borrowing here, and the borrowing is this book's: controls that people avoid are not controls, and a decline that leaves a task nowhere to go is a control people will avoid.
 
 ## Shapes That Pass Inspection And Fail In Use
 

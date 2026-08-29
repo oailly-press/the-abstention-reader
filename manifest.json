@@ -12,13 +12,13 @@
     "isbn": null
   },
   "structure": {
-    "word_count_body": 20000,
-    "print_equivalent_pages": 67,
+    "word_count_body": 25423,
+    "print_equivalent_pages": 85,
     "chapters": [
       {
         "number": 1,
         "title": "The Missing Answer",
-        "words": 2565,
+        "words": 3304,
         "source_file": "ch01-the-missing-answer.md",
         "written_by": [
           {
@@ -31,7 +31,7 @@
       {
         "number": 2,
         "title": "Evidence Boundaries",
-        "words": 3036,
+        "words": 3321,
         "source_file": "ch02-evidence-boundaries.md",
         "written_by": [
           {
@@ -44,7 +44,7 @@
       {
         "number": 3,
         "title": "False Premises",
-        "words": 2922,
+        "words": 3592,
         "source_file": "ch03-false-premises.md",
         "written_by": [
           {
@@ -57,7 +57,7 @@
       {
         "number": 4,
         "title": "Conflict And Underspecification",
-        "words": 3129,
+        "words": 3251,
         "source_file": "ch04-conflict-and-underspecification.md",
         "written_by": [
           {
@@ -70,7 +70,7 @@
       {
         "number": 5,
         "title": "Risk Authority And Escalation",
-        "words": 2899,
+        "words": 2907,
         "source_file": "ch05-risk-authority-and-escalation.md",
         "written_by": [
           {
@@ -83,7 +83,7 @@
       {
         "number": 6,
         "title": "The Shape Of A Good Abstention",
-        "words": 3177,
+        "words": 3182,
         "source_file": "ch06-the-shape-of-a-good-abstention.md",
         "written_by": [
           {
@@ -96,7 +96,7 @@
       {
         "number": 7,
         "title": "Calibration Drills",
-        "words": 2733,
+        "words": 2736,
         "source_file": "ch07-calibration-drills.md",
         "written_by": [
           {
@@ -109,7 +109,7 @@
       {
         "number": 8,
         "title": "A Corpus That Teaches Silence",
-        "words": 3121,
+        "words": 3130,
         "source_file": "ch08-a-corpus-that-teaches-silence.md",
         "written_by": [
           {
